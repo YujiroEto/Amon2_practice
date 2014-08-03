@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS member (
+    id           INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name         VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS sessions (
+	id           CHAR(72) PRIMARY KEY,
+	session_data TEXT
+);
+
+
+CREATE TABLE IF NOT EXISTS entry (
+	entry_id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	body varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
